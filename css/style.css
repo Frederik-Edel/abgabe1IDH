@@ -1,0 +1,43 @@
+body {
+  min-height: 100vh;
+}
+
+.site-header {
+  position: relative;
+}
+
+.site-brand {
+  font-weight: 600;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.site-navigation {
+  float: right;
+}
+
+.hero {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .site-navigation {
+    display: none;
+    float: none;
+    clear: both;
+  }
+
+  .site-navigation.is-open {
+    display: block;
+  }
+
+  .site-navigation a {
+    display: block;
+  }
+}
