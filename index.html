@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Projektseite mit W3.CSS">
   <title>Mein W3.CSS-Projekt</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
 </head>
+
 <body>
   <header class="w3-bar w3-white w3-border-bottom site-header">
-    <a class="w3-bar-item w3-button w3-large site-brand" href="#start">Mein Projekt</a>
-    <button
-      class="w3-bar-item w3-button w3-right menu-toggle"
-      type="button"
-      aria-controls="site-navigation"
-      aria-expanded="false"
-      aria-label="Navigation öffnen"
-    >
+    <a class="w3-bar-item w3-button w3-large site-brand" href="#start">Die besten Filme</a>
+    <button class="w3-bar-item w3-button w3-right menu-toggle" type="button" aria-controls="site-navigation"
+      aria-expanded="false" aria-label="Navigation öffnen">
       Menü
     </button>
     <nav id="site-navigation" class="site-navigation" aria-label="Hauptnavigation">
@@ -28,30 +25,14 @@
     </nav>
   </header>
 
-  <main id="start">
-    <section class="w3-container w3-padding-64 hero">
-      <div class="w3-content">
-        <p class="w3-text-blue">W3.CSS-Projektvorlage</p>
-        <h1>Willkommen in deinem Projekt</h1>
-        <p class="w3-large">Ersetze diesen Text durch eine kurze Einführung in deine Website.</p>
-        <a class="w3-button w3-blue w3-round" href="#ueber">Mehr erfahren</a>
-      </div>
-    </section>
+  <h1>AJAX Abfrage</h1>
 
-    <section id="ueber" class="w3-container w3-padding-32 w3-content">
-      <h2>Über das Projekt</h2>
-      <p>Hier ist Platz für Inhalte, die dein Projekt und seine Ziele vorstellen.</p>
-      <div class="w3-panel w3-light-grey w3-leftbar w3-border-blue">
-        <p>Nutze W3.CSS-Klassen für Layout und Komponenten und ergänze sie bei Bedarf in <code>css/style.css</code>.</p>
-      </div>
-    </section>
-  </main>
+  <label for="name">Vor welchem Jahr soll der Film spätestens erschienen sein?</label>
+  <input type="text" name="jahr" id="eingabe"></textarea>
 
-  <footer id="kontakt" class="w3-container w3-dark-grey w3-padding-24">
-    <div class="w3-content">
-      <p class="w3-margin-0">Kontakt: <a href="mailto:beispiel@example.org">beispiel@example.org</a></p>
-      <p class="w3-small w3-margin-bottom-0">© <span id="current-year"></span> Mein Projekt</p>
-    </div>
-  </footer>
+  <input type="button" value="Absenden" onclick="submitData()">
+  <div id="ausgabe" class="w3-panel w3-card w3-pale-blue w3-round-large"></div></div>
+
 </body>
+
 </html>
