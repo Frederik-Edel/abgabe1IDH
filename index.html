@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Projektseite mit W3.CSS">
-  <title>Mein W3.CSS-Projekt</title>
+  <title>MyMovies</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
@@ -13,7 +13,7 @@
 
 <body>
   <header class="w3-bar w3-white w3-border-bottom site-header">
-    <a class="w3-bar-item w3-button w3-large site-brand" href="#start">Die besten Filme</a>
+    <a class="w3-bar-item w3-button w3-large site-brand" href="#start">MyMovies</a>
     <button class="w3-bar-item w3-button w3-right menu-toggle" type="button" aria-controls="site-navigation"
       aria-expanded="false" aria-label="Navigation öffnen">
       Menü
@@ -25,6 +25,42 @@
     </nav>
   </header>
 
+  <h1 class="header w3-red">MyMovies</h1>
+
+  <div id="box" class="w3-container w3-border w3-round-large w3-light-grey w3-margin">
+    <h2>Was ist MyMovies?</h2>
+    <p>MyMovies ist ihr Zuhause für Filme und alles drum herum. Entdecke spannende Filme aus verschiedenen Genres, informiere dich über Neuerscheinungen und zeitlose Klassiker oder lass dich von unseren Empfehlungen inspirieren. Mit Filmkritiken, Bewertungen und persönlichen Watchlists helfen wir dir dabei, deinen nächsten Lieblingsfilm zu finden. Egal ob Action, Drama, Thriller oder Comedy – hier ist für jeden Geschmack etwas dabei. Tauche ein in die Welt des Films!</p>
+  </div>
+
+  <div id="box" class="w3-container w3-border w3-round-large w3-light-grey w3-margin">
+    <h2>Filmempfehlung des Tages</h2>
+    <div class="flex-container">
+      <img width="300" src="https://www.nochnfilm.de/wp-content/uploads/2025/10/Das-Schweigen-der-Laemmer-Plakat.jpg" alt="Filmempfehlung des Tages">
+      <p class="filmFakten"> 
+        <b>Original Titel:</b> The Silence of the Lambs<br>
+        <b>Erscheinungsjahr:</b> 1991<br>
+        <b>Produktionsland:</b> USA<br>
+        <b>Regisseur:</b> Jonathan Demme<br>
+        <b>Drehbuch:</b> Ted Tally<br>
+        <b>Produktionsunternehmen:</b> Orion Pictures<br>
+        <b>Genre:</b> Thriller, Horror, Krimi<br>
+        <b>Länge:</b> 118 Minuten<br>
+      </p>
+      <p class="filmZusammenfassung">
+        Die junge FBI-Anwärterin Clarice Starling erhält einen besonders schwierigen Auftrag: Sie
+        soll bei der Suche nach einem grausamen Serienmörder helfen, der mehrere junge Frauen entführt 
+        und das ganze Land in Angst versetzt. Um mehr über die Denkweise des Täters herauszufinden, 
+        wendet sie sich an den inhaftierten Psychiater Dr. Hannibal Lecter. Dieser ist 
+        außergewöhnlich intelligent, manipulativ und selbst für erfahrene Ermittler eine 
+        beunruhigende Persönlichkeit. Zwischen den beiden entwickelt sich ein psychologisches 
+        Katz-und-Maus-Spiel, bei dem Clarice auf Lecters Hilfe angewiesen ist, sich gleichzeitig 
+        aber vor seinen gefährlichen Gedankenspielen schützen muss. Während die Ermittlungen 
+        voranschreiten, wird sie immer tiefer in eine düstere Welt aus Angst, Manipulation und 
+        menschlichen Abgründen hineingezogen. Ein meisterhafter Psychothriller, der durch seine 
+        beklemmende Atmosphäre, spannende Dialoge und herausragende schauspielerische Leistungen 
+        bis zur letzten Minute fesselt.
+    </div>
+  </div>
   <h1>AJAX Abfrage</h1>
 
   <label for="name">Vor welchem Jahr soll der Film spätestens erschienen sein?</label>
